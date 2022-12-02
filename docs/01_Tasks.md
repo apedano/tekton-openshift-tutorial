@@ -28,11 +28,3 @@ spec:
 To add the file
 
 `oc apply -n pipeline-tutorial -f <path_to_task>/hello-world-task-1.yaml`
-
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACCpfgpjAeb5elIcwEie3e40QsPInUPFsJ9j96t8HUUdugAAAKBaipYzWoqW
-MwAAAAtzc2gtZWQyNTUxOQAAACCpfgpjAeb5elIcwEie3e40QsPInUPFsJ9j96t8HUUdug
-AAAEBXchIDIid1Mltore9UMN7g68c+R8hKWlwdmlM5noaiGKl+CmMB5vl6UhzASJ7d7jRC
-w8idQ8Wwn2P3q3wdRR26AAAAG3BlZGFuby5hbGVzc2FuZHJvQGdtYWlsLmNvbQEC
------END OPENSSH PRIVATE KEY-----
