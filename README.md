@@ -126,3 +126,11 @@ Loosely speaking, at its core, Tekton Pipelines functions by wrapping each of yo
 Tekton Pipelines tracks the state of your pipeline using [Kubernetes Annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/). These annotations are projected inside each step container in the form of files with the [Kubernetes Downward API](https://kubernetes.io/docs/tasks/inject-data-application/downward-api-volume-expose-pod-information/#the-downward-api). The `entrypoint` binary watches the projected files closely, and will only start the provided command if a specific annotation appears as files. For example, when you ask Tekton to run two steps consecutively in a task, the `entrypoint` binary injected into the second step container will wait idly until the annotations report that the first step container has successfully completed.
 
 In addition, Tekton Pipelines schedules some containers to run automatically before and after your step containers, so as to support specific built-in features, such as the retrieval of input resources and the uploading of outputs to blob storage solutions. You can track their running statuses as well via **taskRuns** and **pipelineRuns**. The system also performs a number of other operations to set up the environment before running the step containers; for more information, see [Tasks and Pipelines](/docs/pipelines).
+
+
+
+## Tutorial steps
+
+* [Installation on Openshift](https://tekton.dev/docs/pipelines/install/#installing-tekton-pipelines-on-openshift)
+* [Installation on Openshift method 2](https://github.com/openshift/pipelines-tutorial/blob/master/install-operator.md)
+* [OpenShift Coffee Break: Absolute Beginners guide to Tekton (YouTube)](https://www.youtube.com/watch?v=c2pcTQL97J0)
